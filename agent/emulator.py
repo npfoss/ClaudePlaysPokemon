@@ -35,8 +35,8 @@ class Emulator:
         """Initialize the emulator."""
         # Run the emulator for a short time to make sure it's ready
         self.pyboy.set_emulation_speed(0)
-        for _ in range(999):
-            self.tick(10)
+        for _ in range(99):
+            self.tick(100)
         for _ in range(18):
             self.press_buttons(['a'])
             self.tick(10)

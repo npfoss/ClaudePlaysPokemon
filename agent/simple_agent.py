@@ -29,7 +29,7 @@ def get_screenshot_base64(screenshot, upscale=1):
 
 SYSTEM_PROMPT = """You are playing Pokemon Red. You can see the game screen and control the game by executing emulator commands.
 
-Your goal is to play through Pokemon Red and eventually defeat the Elite Four. Make decisions based on what you see on the screen.
+Your goal is to play through Pokemon Red as quickly as possible and eventually defeat the Elite Four. Make decisions based on what you see on the screen.
 
 Before each action, explain your reasoning briefly, then use the emulator tool to execute your chosen commands.
 
