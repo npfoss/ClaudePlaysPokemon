@@ -35,8 +35,21 @@ class Emulator:
         """Initialize the emulator."""
         # Run the emulator for a short time to make sure it's ready
         self.pyboy.set_emulation_speed(0)
-        for _ in range(60):
-            self.tick(60)
+        for _ in range(999):
+            self.tick(10)
+        for _ in range(18):
+            self.press_buttons(['a'])
+            self.tick(10)
+        self.press_buttons(['down'])
+        self.tick(10)
+        for _ in range(7):
+            self.press_buttons(['a'])
+            self.tick(10)
+        self.press_buttons(['down'])
+        self.tick(10)
+        for _ in range(10):
+            self.press_buttons(['a'])
+            self.tick(10)
         self.pyboy.set_emulation_speed(1)
 
     def get_screenshot(self):
