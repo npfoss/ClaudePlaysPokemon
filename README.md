@@ -13,7 +13,7 @@ A minimal implementation of Claude playing Pokemon Red using the PyBoy emulator.
    ```
    pip install -r requirements.txt
    ```
-3. Set up your Anthropic API key as an environment variable:
+3. Create .env.local with the following line and your Anthropic API key:
    ```
    export ANTHROPIC_API_KEY=your_api_key_here
    ```
@@ -24,8 +24,8 @@ A minimal implementation of Claude playing Pokemon Red using the PyBoy emulator.
 
 Run the main script:
 
-```
-python main.py
+```bash
+source .env.local && python main.py
 ```
 
 Optional arguments:
@@ -36,7 +36,7 @@ Optional arguments:
 
 Example:
 ```
-python main.py --rom pokemon.gb --steps 20 --display --sound
+source .env.local && python main.py --rom pokemon.gb --steps 20 --display --sound
 ```
 
 ## Implementation Details
